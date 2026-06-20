@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background:
+      radial-gradient(circle at top left, rgb(37 99 235 / 0.08), transparent 30%),
+      linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  }
+}
+
+@layer components {
+  .container {
+    @apply w-[min(1120px,_calc(100%_-_2rem))] mx-auto;
+  }
+}
